@@ -1,0 +1,679 @@
+<html>
+  <head>
+    <title>  Vim Text Objects: The Definitive Guide</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://c5-website-2020.netlify.app/stylesheets/site.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://blog.carbonfive.com/wp-content/themes/c5-blog-2020/style.css">
+    <link rel="icon" href="https://www.carbonfive.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://www.carbonfive.com/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/rss+xml" title="  Vim Text Objects: The Definitive Guide" href="https://blog.carbonfive.com/feed/" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://c5-website-2020.netlify.app/javascripts/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WDLW2LV');</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-620051-2', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+      var google_conversion_id = 982501583;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2297926.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+    <script type="text/javascript"> _linkedin_data_partner_id = "209380"; </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script>
+    <script>
+      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq('init','o1y5x');
+      twq('track','PageView');
+    </script>
+    <title>Vim Text Objects: The Definitive Guide &#8211; Field Notes from Carbon Five</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel="alternate" type="application/rss+xml" title="Field Notes from Carbon Five &raquo; Vim Text Objects: The Definitive Guide Comments Feed" href="https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.carbonfive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.carbonfive.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.3' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='arve-main-css'  href='https://blog.carbonfive.com/wp-content/plugins/advanced-responsive-video-embedder/build/main.css?ver=8d9041dffdd559096a49d6ed127521cd' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://blog.carbonfive.com/wp-content/plugins/jetpack/css/jetpack.css?ver=9.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://blog.carbonfive.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script async="async" type='text/javascript' src='https://blog.carbonfive.com/wp-content/plugins/advanced-responsive-video-embedder/build/main.js?ver=8d9041dffdd559096a49d6ed127521cd' id='arve-main-js'></script>
+<link rel="https://api.w.org/" href="https://blog.carbonfive.com/wp-json/" /><link rel="alternate" type="application/json" href="https://blog.carbonfive.com/wp-json/wp/v2/posts/5203" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.carbonfive.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.carbonfive.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.3" />
+<link rel="canonical" href="https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/" />
+<link rel='shortlink' href='https://wp.me/p1CKEo-1lV' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.carbonfive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.carbonfive.com%2Fvim-text-objects-the-definitive-guide%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.carbonfive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.carbonfive.com%2Fvim-text-objects-the-definitive-guide%2F&#038;format=xml" />
+<script type="text/javascript">//<![CDATA[
+  function external_links_in_new_windows_loop() {
+    if (!document.links) {
+      document.links = document.getElementsByTagName('a');
+    }
+    var change_link = false;
+    var force = '';
+    var ignore = '.*carbonfive\.com.*';
+
+    for (var t=0; t<document.links.length; t++) {
+      var all_links = document.links[t];
+      change_link = false;
+      
+      if(document.links[t].hasAttribute('onClick') == false) {
+        // forced if the address starts with http (or also https), but does not link to the current domain
+        if(all_links.href.search(/^http/) != -1 && all_links.href.search('blog.carbonfive.com') == -1 && all_links.href.search(/^#/) == -1) {
+          // console.log('Changed ' + all_links.href);
+          change_link = true;
+        }
+          
+        if(force != '' && all_links.href.search(force) != -1) {
+          // forced
+          // console.log('force ' + all_links.href);
+          change_link = true;
+        }
+        
+        if(ignore != '' && all_links.href.search(ignore) != -1) {
+          // console.log('ignore ' + all_links.href);
+          // ignored
+          change_link = false;
+        }
+
+        if(change_link == true) {
+          // console.log('Changed ' + all_links.href);
+          document.links[t].setAttribute('onClick', 'javascript:window.open(\''+all_links.href+'\'); return false;');
+          document.links[t].removeAttribute('target');
+        }
+      }
+    }
+  }
+  
+  // Load
+  function external_links_in_new_windows_load(func)
+  {  
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function'){
+      window.onload = func;
+    } else {
+      window.onload = function(){
+        oldonload();
+        func();
+      }
+    }
+  }
+
+  external_links_in_new_windows_load(external_links_in_new_windows_loop);
+  //]]></script>
+
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Vim Text Objects: The Definitive Guide" />
+<meta property="og:url" content="https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/" />
+<meta property="og:description" content="To edit efficiently in Vim, you have to edit beyond individual characters. Instead, edit by word, sentence, and paragraph. In Vim, these higher-level contexts are called text objects. Vim provides …" />
+<meta property="article:published_time" content="2011-10-17T17:29:48+00:00" />
+<meta property="article:modified_time" content="2021-07-20T22:08:15+00:00" />
+<meta property="og:site_name" content="Field Notes from Carbon Five" />
+<meta property="og:image" content="https://blog.carbonfive.com/wp-content/uploads/2011/10/2.png" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:alt" content="Colors" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:text:title" content="Vim Text Objects: The Definitive Guide" />
+<meta name="twitter:image" content="https://blog.carbonfive.com/wp-content/uploads/2011/10/2.png?w=640" />
+<meta name="twitter:image:alt" content="Colors" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+  </head>
+  <body data-rsssl=1 class="blog">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item navbar-logo" href="https://www.carbonfive.com/">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42"
+             viewBox="0 0 32 32">
+            <path class="logo" d="M31.9,18.3l-5.2-16c-0.3-0.9-1.3-1.6-2.3-1.6H7.6c-0.9,0-2,0.7-2.3,1.6l-5.2,16C-0.2,19.3,0.2,20.4,1,21
+            l13.6,9.9c0.8,0.6,2,0.6,2.8,0L31,21C31.8,20.4,32.2,19.2,31.9,18.3z M23.4,21.3l-6.4,4.6c-0.6,0.4-1.4,0.4-2,0l-6.4-4.6
+            c-0.6-0.4-0.4-0.7,0.2-0.7h14.3C23.9,20.6,24,20.9,23.4,21.3z M26,16.8H6.1c-0.7,0-1.1-0.5-0.8-1.2l3.2-9.8C8.6,5.2,9.4,4.6,10,4.6
+            h12c0.7,0,1.4,0.5,1.6,1.2l0.5,1.7c0.2,0.6-0.2,1.2-0.8,1.2h-9.9c-0.7,0-1.4,0.5-1.6,1.2l-0.5,1.7c-0.2,0.6,0.2,1.2,0.9,1.2h12.5
+            c0.7,0,1.4,0.5,1.6,1.2l0.6,1.8C27.1,16.3,26.7,16.8,26,16.8z"/>
+          </svg>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="primary-nav">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="primary-nav" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="https://www.carbonfive.com/about/">
+            <span>About</span>
+          </a>
+          <a class="navbar-item" href="https://www.carbonfive.com/services/">
+            <span>Services</span>
+          </a>
+          <a class="navbar-item" href="https://www.carbonfive.com/clients/">
+            <span>Clients</span>
+          </a>
+          <a class="navbar-item" href="https://www.carbonfive.com/resources/">
+            <span>Resources</span>
+          </a>
+          <a class="navbar-item is-active" href="/">
+            <span>Blog</span>
+          </a>
+          <a class="navbar-item" href="https://www.carbonfive.com/careers/">
+            <span>Careers</span>
+          </a>
+          <a class="button is-small is-danger is-rounded" href="https://www.carbonfive.com/contact/">
+            <span class="is-size-6">Contact</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <nav class="navbar" role="navigation" aria-label="secondary navigation">
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <div class="navbar-item pt-0 pb-0">
+              <form role="search" method="get" action="https://blog.carbonfive.com/">
+                <div class="field">
+                  <p class="control has-icons-left has-icons-right">
+                    <input name="s" class="input" type="text" value="" placeholder="Search">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <a class="navbar-item " href="/category/development/">Development</a>
+            <a class="navbar-item " href="/category/design/">Design</a>
+            <a class="navbar-item " href="/category/product-management/">Product Management</a>
+            <a class="navbar-item is-active" href="/category/process/">Process</a>
+          </div>
+        </div>
+      </nav>  <section class="hero has-margin-bottom-20">
+    <figure class="image is-2by1">
+      <img width="800" height="400" src="https://blog.carbonfive.com/wp-content/uploads/2011/10/2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Colors" loading="lazy" srcset="https://blog.carbonfive.com/wp-content/uploads/2011/10/2.png 800w, https://blog.carbonfive.com/wp-content/uploads/2011/10/2-470x235.png 470w, https://blog.carbonfive.com/wp-content/uploads/2011/10/2-768x384.png 768w" sizes="(max-width: 800px) 100vw, 800px" />    </figure>
+  </section>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2 content">
+                  <div class="level has-margin-bottom-20">
+            <div class="level-left">
+              <a href="https://blog.carbonfive.com/category/process/" class="level-item title is-6 has-margin-bottom-0">Process</a>            </div>
+            <div class="level-right">
+              <span class="level-item buttons">
+            <a class="button is-rounded is-outlined has-text-grey-light is-medium icon" href="https://twitter.com/home?status=Vim+Text+Objects%3A+The+Definitive+Guidehttps%3A%2F%2Fblog.carbonfive.com%2Fvim-text-objects-the-definitive-guide%2F"><i class="fab fa-twitter"></i></a>
+            <a class="button is-rounded is-outlined has-text-grey-light is-medium icon" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.carbonfive.com%2Fvim-text-objects-the-definitive-guide%2F"><i class="fab fa-facebook"></i></a>
+            <a class="button is-rounded is-outlined has-text-grey-light is-medium icon" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog.carbonfive.com%2Fvim-text-objects-the-definitive-guide%2F&title=Vim+Text+Objects%3A+The+Definitive+Guide"><i class="fab fa-linkedin"></i></a>
+            <a class="button is-rounded is-outlined has-text-grey-light is-medium icon" href="mailto:info@carbonfive.com?subject=Vim+Text+Objects%3A+The+Definitive+Guide&body=https%3A%2F%2Fblog.carbonfive.com%2Fvim-text-objects-the-definitive-guide%2F"><i class="fa fa-envelope"></i></a>
+          </span>            </div>
+          </div>
+          <h1 class="title is-1 has-margin-bottom-5">Vim Text Objects: The Definitive Guide</h1>            
+          <p class="has-margin-bottom-20">
+            <a href="https://blog.carbonfive.com/author/jcarroll/">Jared Carroll</a> · <time datetime="17-10-2011" class="has-text-grey">October 17th, 2011</time>
+          </p>
+          <div class="has-margin-bottom-50">
+            <p>To edit efficiently in Vim, you have to edit beyond individual characters. Instead, edit by word, sentence, and paragraph. In Vim, these higher-level contexts are called <strong>text objects</strong>. Vim provides text objects for both plaintext and common programming language constructs. You can also define new text objects using Vim script. Learning these text objects can take your Vim editing to a whole new level of precision and speed. <span id="more-5203"></span></p>
+<h2>Structure of an Editing Command</h2>
+<p>In Vim, editing commands have the following structure:</p>
+<pre class="callout">  &lt;number&gt;&lt;command&gt;&lt;text object or motion&gt;
+</pre>
+<p>The <strong>number</strong> is used to perform the command over multiple text objects or motions, e.g., backward three words, forward two paragraphs. The number is optional and can appear either before or after the command. The <strong>command</strong> is an operation, e.g., change, delete (cut), or yank (copy). The command is also optional; but without it, you only have a motion command, not an edit command The <strong>text object</strong> or <strong>motion</strong> can either be a text construct, e.g., a word, a sentence, a paragraph, or a motion, e.g., forward a line, back one page, end of the line. An <strong>editing command</strong> is a command plus a text object or motion, e.g., delete this word, change the next sentence, copy this paragraph.</p>
+<h2>Plaintext Text Objects</h2>
+<p>Vim provides text objects for the three building blocks of plaintext: words, sentences and paragraphs.</p>
+<h3>Words</h3>
+<ul>
+<li>aw &#8211; a word (includes surrounding white space)</li>
+<li>iw &#8211; inner word (does <strong>not</strong> include surrounding white space)</li>
+</ul>
+<pre class="callout">Lorem ip<span class="cursor">s</span>um dolor sit amet...
+</pre>
+<p><code>daw</code></p>
+<pre class="callout">Lorem <span class="cursor">d</span>olor sit amet...
+</pre>
+<p>Text objects beginning with <code>a</code> include the surrounding white space in the text object, those starting with <code>i</code> do not. This convention is followed by all text objects. The motion <code>w</code> may seem similar to the text object <code>aw</code>. The difference is in the allowed cursor position. For example, to delete a word using <code>dw</code> the cursor must be at the start of the word, any other position would delete only part of the word; however, <code>daw</code> allows the cursor to be at any position in the word.</p>
+<p><a href="https://info.carbonfive.com/carbon-five-field-notes-newsletter"><img loading="lazy" class="aligncenter size-large wp-image-19280" src="https://blog.carbonfive.com/wp-content/uploads/2021/07/CTA-Banner-Newsletter-Signup-2-970x255.png" alt="" width="970" height="255" srcset="https://blog.carbonfive.com/wp-content/uploads/2021/07/CTA-Banner-Newsletter-Signup-2-970x255.png 970w, https://blog.carbonfive.com/wp-content/uploads/2021/07/CTA-Banner-Newsletter-Signup-2-470x123.png 470w, https://blog.carbonfive.com/wp-content/uploads/2021/07/CTA-Banner-Newsletter-Signup-2-768x202.png 768w, https://blog.carbonfive.com/wp-content/uploads/2021/07/CTA-Banner-Newsletter-Signup-2-1536x403.png 1536w, https://blog.carbonfive.com/wp-content/uploads/2021/07/CTA-Banner-Newsletter-Signup-2-2048x538.png 2048w" sizes="(max-width: 970px) 100vw, 970px" /></a></p>
+<h3>Sentences</h3>
+<ul>
+<li>as &#8211; a sentence</li>
+<li>is &#8211; inner sentence</li>
+</ul>
+<pre class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut l<span class="cursor">a</span>bore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</pre>
+<p><code>cis</code></p>
+<pre class="callout"><span class="cursor"> </span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat.
+</pre>
+<p>Notice how the &#8220;inner&#8221; text object does <strong>not</strong> include the trailing white space. Like <code>aw</code>, <code>as</code> offers the same cursor position advantage over its motion counterparts <code>(</code> <code>)</code>, forward and backward a sentence. To operate on the entire previous sentence <code>(</code> requires the cursor to be at the end of the sentence; to operate on the entire next sentence <code>)</code> requires your cursor to be at the start of the sentence.</p>
+<h3>Paragraphs</h3>
+<ul>
+<li>ap &#8211; a paragraph</li>
+<li>ip &#8211; inner paragraph</li>
+</ul>
+<pre class="callout">Lorem ipsum dolor <span class="cursor">s</span>it amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+</pre>
+<p><code>dap</code></p>
+<pre class="callout"><span class="cursor">D</span>uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
+</pre>
+<p>Again, <code>ap</code> and <code>ip</code> provide the same cursor position advantage that Vim&#8217;s sentence and word text objects provide: your cursor can be anywhere within the paragraph in order to operate on it.</p>
+<h2>Motion Commands vs. Text Objects Commands</h2>
+<p>A command using a motion, e.g., <code>cw</code>, operates from the current cursor position. A command using a text-object, e.g., <code>ciw</code> operates on the whole object regardless of the cursor position. We saw this behavior in each of the various plaintext text objects. Although this requires one more character, it saves you the time and effort of moving the cursor into the &#8220;right&#8221; position.</p>
+<h2>Programming Language Text Objects</h2>
+<p>Vim provides several text objects based on common programming language constructs.</p>
+<h3>Strings</h3>
+<ul>
+<li>a&#8221; &#8211; a double quoted string</li>
+<li>i&#8221; &#8211; inner double quoted string</li>
+<li>a&#8217; &#8211; a single quoted string</li>
+<li>i&#8217; &#8211; inner single quoted string</li>
+<li>a` &#8211; a back quoted string</li>
+<li>i` &#8211; inner back quoted string</li>
+</ul>
+<pre class="callout"><span class="cursor">p</span>uts 'Hello "world"'
+</pre>
+<p><code>ci"</code></p>
+<pre class="callout">puts 'Hello "<span class="cursor">"</span>'
+</pre>
+<p>Notice that the cursor was <strong>not</strong> even within the double-quoted phrase (&#8220;world&#8221;); the command defaulted to changing the first double-quoted phrase in the line.</p>
+<pre class="callout">puts <span class="cursor">'</span>Hello "world"'
+</pre>
+<p><code>ci'</code></p>
+<pre class="callout">puts '<span class="cursor">'</span>
+</pre>
+<p>Current line searches offer an alternative way to delete a quoted phrase. Continuing with the previous example, placing the cursor on the first <code>'</code> and executing <code>ct'</code> would delete the contents of the single quoted string and place us in insert mode. However, this is less flexible than using a text object because it requires the cursor to be on the opening <code>'</code>. A search pattern <code>/'</code> could also be used, but it too requires the cursor to be on the opening <code>'</code>. It also deletes the closing <code>'</code>. It&#8217;s best to use search commands for searching and <strong>not</strong> editing.</p>
+<h3>Parentheses</h3>
+<ul>
+<li>a) &#8211; a parenthesized block</li>
+<li>i) &#8211; inner parenthesized block</li>
+</ul>
+<pre class="callout">Project.all(:conditions =&gt; { :published =&gt; true }<span class="cursor">)</span>
+</pre>
+<p><code>da)</code></p>
+<pre class="callout">Project.al<span class="cursor">l</span>
+</pre>
+<p>Both of these text objects are also available as <code>ab</code> and <code>ib</code>, however I find these less intuitive than using the version that includes a parenthesis character. The <code>%</code> motion is another way to match a pair of parentheses. Entering <code>%</code> on an opening parenthesis will move the cursor to the closing parenthesis. Combined with a command, this can provide the same<br />functionality as <code>a)</code>, e.g., <code>c%</code> is equivalent to <code>ca)</code>. However, the disadvantage to using <code>%</code> is that the cursor <strong>must</strong> be on the opening or closing parenthesis; with <code>a)</code> the cursor can be anywhere on <strong>or</strong> the parenthesized phrase. There is also no way to replicate <code>i)</code> using <code>%</code>.</p>
+<h3>Brackets</h3>
+<ul>
+<li>a] &#8211; a bracketed block</li>
+<li>i] &#8211; inner bracketed block</li>
+</ul>
+<pre class="callout">(defn sum [<span class="cursor">x</span> y]
+  (+ x y))
+</pre>
+<p><code>di]</code></p>
+<pre class="callout">(defn sum [<span class="cursor">]</span>
+  (+ x y))
+</pre>
+<p>The <code>%</code> movement can also be with <code>[]</code>. However, it has the same limited flexibility when using it with <code>()</code>.</p>
+<h3>Braces</h3>
+<ul>
+<li>a} &#8211; a brace block</li>
+<li>i} &#8211; inner brace block</li>
+</ul>
+<pre class="callout">puts "Name: #{<span class="cursor">u</span>ser.name}"
+</pre>
+<p><code>ci}</code></p>
+<pre class="callout">puts "Name: #{<span class="cursor">}</span>"
+</pre>
+<p>Both of these text objects are also available as <code>aB</code> and <code>iB</code>, however, I find these less intuitive than using the version that includes a brace character. Again, the <code>%</code> movement can also be with <code>{}</code>. However, it has the same limited flexibility when using it with <code>()</code> or <code>[]</code>.</p>
+<h3>Markup Language Tags</h3>
+<ul>
+<li>at &#8211; a tag block</li>
+<li>it &#8211; inner tag block</li>
+</ul>
+<pre class="callout"><span class="cursor">&lt;</span>h2&gt;Sample Title&lt;/h2&gt;
+</pre>
+<p><code>cit</code></p>
+<pre class="callout">&lt;h2&gt;<span class="cursor">&lt;</span>/h2&gt;
+</pre>
+<p>Notice that the cursor was <strong>not</strong> even within the <code>&lt;h2&gt;</code>. This is a very efficient way to quickly replace tag content.</p>
+<ul>
+<li>a&gt; &#8211; a single tag</li>
+<li>i&gt; &#8211; inner single tag</li>
+</ul>
+<pre class="callout">&lt;div <span class="cursor">i</span>d="content"&gt;&lt;/div&gt;
+</pre>
+<p><code>di&gt;</code></p>
+<pre class="callout">&lt;<span class="cursor">&gt;</span>&lt;/div&gt;
+</pre>
+<p>This text object can be used to quickly operate on a single tag and its attributes.</p>
+<h2>Vim Scripts Providing Additional Text Objects</h2>
+<p>Using Vim script, it&#8217;s possible to create new text objects. Here&#8217;s a few of my favorite scripts that introduce new programming language text objects.</p>
+<h3>CamelCaseMotion</h3>
+<p><a href="https://github.com/bkad/CamelCaseMotion">CamelCaseMotion</a> provides a text object to move by words within a camel or snake-cased word.</p>
+<ul>
+<li>i,w &#8211; inner camel or snake-cased word</li>
+</ul>
+<pre class="callout"><span class="cursor">B</span>eanFactoryTransactionAttributeSourceAdvisor</pre>
+<p><code>ci,w</code></p>
+<pre class="callout"><span class="cursor">F</span>actoryTransactionAttributeSourceAdvisor</pre>
+<h3>VimTextObj</h3>
+<p><a href="https://github.com/vim-scripts/argtextobj.vim">VimTextObj</a> provides a text object for function arguments.</p>
+<ul>
+<li>aa &#8211; an argument</li>
+<li>ia &#8211; inner argument</li>
+</ul>
+<pre class="callout">foo(42, <span class="cursor">b</span>ar(5), 'hello');</pre>
+<p><code>cia</code></p>
+<pre class="callout">foo(42, <span class="cursor">,</span> 'hello');</pre>
+<h3>Indent Object</h3>
+<p><a href="https://github.com/michaeljsmith/vim-indent-object">Indent Object</a> provides a text object based on indentation level. This script is aimed at programming languages that use significant whitespace to delimit code blocks, e.g., Python, CoffeeScript, because its text object does <strong>not</strong> include the line after the last line of the indentation level.</p>
+<ul>
+<li>ai &#8211; the current indentation level and the line above</li>
+<li>ii &#8211; the current indentation level excluding the line above</li>
+</ul>
+<pre class="callout">def foo():
+  if 3 &gt; 5:
+    <span class="cursor">r</span>eturn True
+  return "foo"
+</pre>
+<p><code>dai</code></p>
+<pre class="callout">def foo():
+  <span class="cursor">r</span>eturn "foo"
+</pre>
+<h3>Ruby Block</h3>
+<p><a href="https://github.com/nelstrom/vim-textobj-rubyblock">Ruby Block</a> provides a text object based on a Ruby block, i.e., any expression that is closed with the <code>end</code> keyword.</p>
+<ul>
+<li>ar &#8211; a Ruby block</li>
+<li>ir &#8211; inner Ruby block</li>
+</ul>
+<pre class="callout">hash.each do |key, value|
+  puts key
+  puts valu<span class="cursor">e</span>
+end
+</pre>
+<p><code>cir</code></p>
+<pre class="callout">hash.each do |key, value|
+  <span class="cursor"> </span>
+end
+</pre>
+<h2>Vi Command Line Editing</h2>
+<p>If you use Vi command line editing in your shell, enabled with <code>set -o vi</code> in bash and <code>bindkey -v</code> in zsh, Vim&#8217;s text objects are <strong>not</strong> available. Text objects were introduced by Vim but shell command line editing is based on Vi.</p>
+<h2>Precision Editing</h2>
+<p>Vim&#8217;s text objects provide an incredible level of precision. The key is to try to always edit by text objects. Editing by motions e.g., by part of a line, to the next occurrence of a character, is tedious, clumsy, and slow. Instead of correcting a misspelling character by character, change the entire word and re-type it. Don&#8217;t be discouraged by the large number of text objects, their conventions make them intuitive and easy to learn. After some practice, like every other Vim command, they&#8217;ll quickly become just another muscle memory.</p>
+<hr class="wp-block-separator" />
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img loading="lazy" width="560" height="315" class="wp-image-15671" src="https://blog.carbonfive.com/wp-content/uploads/2019/06/blog-recruitment.png" alt="" srcset="https://blog.carbonfive.com/wp-content/uploads/2019/06/blog-recruitment.png 560w, https://blog.carbonfive.com/wp-content/uploads/2019/06/blog-recruitment-470x264.png 470w" sizes="(max-width: 560px) 100vw, 560px" />
+<figcaption>Now hiring developers, designers and product managers. <br />Apply now: <a href="https://www.carbonfive.com/careers/?utm_source=blog%20post&amp;utm_campaign=vim-text-objects">www.carbonfive.com/careers</a></figcaption>
+</figure>
+</div>
+<div class="crp_related  "><h3>Related Posts</h3><ul><li><a href="https://blog.carbonfive.com/authorization-and-authentication-in-graphql/"     class="crp_link post-17964"><span class="crp_title">Authorization and Authentication in GraphQL</span></a></li><li><a href="https://blog.carbonfive.com/cross-platform-elixir-releases-with-docker/"     class="crp_link post-17215"><span class="crp_title">Cross-Platform Elixir Releases with Docker</span></a></li><li><a href="https://blog.carbonfive.com/approaching-gender-in-software-products/"     class="crp_link post-15702"><span class="crp_title">Approaching Gender in Software Products</span></a></li></ul><div class="crp_clear"></div></div>          </div>
+              </div>
+    </div>
+    <div class="columns">
+      <div class="column is-4 is-offset-4 has-text-centered">
+        <div class="tags is-centered has-margin-bottom-50">
+          <a href="https://blog.carbonfive.com/tag/vim-vim-text-objects/" class="tag is-capitalized">vim vim-text-objects</a>        </div>
+        <a href="https://blog.carbonfive.com/author/jcarroll/">
+          <figure class="is-centered image avatar-image is-96x96 has-margin-bottom-5">
+            <img alt='Jared Carroll' src='https://secure.gravatar.com/avatar/987def7741e1f36805e45f92d66ccf92?s=192&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/987def7741e1f36805e45f92d66ccf92?s=384&#038;d=mm&#038;r=g 2x' class='avatar avatar-192 photo is-rounded' height='192' width='192' loading='lazy'/>          </figure>
+        </a>
+        <div class="has-margin-bottom-50">
+          <h5 class="has-margin-bottom-10"><a href="https://blog.carbonfive.com/author/jcarroll/">Jared Carroll</a></h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+    <section id="contact" class="section has-background-light">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div id="directions">
+              <h2 class="title is-2">What can we help you with?</h2>
+              <h3 class="subtitle is-3 has-margin-bottom-5">Tell us a bit about your project, or just shoot us an <a href="mailto:info@carbonfive.com">email</a>.</h3>
+              <p class="has-margin-bottom-40">Interested in a Career at Carbon Five? <a href="https://c5-website-2020.netlify.app/careers">Check out our job openings</a>.</p>
+            </div>
+            <div id="confirmation" class="is-hidden">
+              <h2 class="title is-2">Thanks for dropping us a line!</h2>
+              <h3 class="subtitle is-3 has-margin-bottom-40">Someone will get back to you — usually the same day.</h3>
+            </div>
+            <form>
+              <div class="columns">
+                <div class="column is-6">
+                  <div class="field has-margin-bottom-30">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                      <input class="input is-medium" type="text" name="firstname" required="true">
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="field has-margin-bottom-30">
+                    <label class="label">Last Name</label>
+                    <div class="control">
+                      <input class="input is-medium" type="text" name="lastname" required="true">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column is-6">
+                  <div class="field has-margin-bottom-30">
+                    <label class="label">E-mail</label>
+                    <div class="control">
+                      <input class="input is-medium" type="email" name="email" required="true">
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="field has-margin-bottom-30">
+                    <label class="label">How did you hear about Carbon Five?</label>
+                    <div class="control is-expanded">
+                      <div class="select is-medium is-fullwidth">
+                        <select name="lead_source">
+                          <option></option>
+                          <option value="search">Search engine</option>
+                          <option value="referral">Referral from a friend or colleague</option>
+                          <option value="content">Blog post or social media</option>
+                          <option value="event">Event</option>
+                          <option value="repeat">We've worked together before</option>
+                          <option value="direct">I'm not sure, I just know you</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Tell us a little about your project</label>
+                <div class="control has-margin-bottom-30">
+                  <div name="message-input" class="input is-medium" contenteditable="true"></div>
+                  <input name="message" type="hidden"></input>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control is-clearfix">
+                  <input name="lifecyclestage" value="lead" type="hidden"></input>
+                  <button class="button is-text is-pulled-right" type="submit">
+                    <span>Send</span>
+                    <span class="icon">
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer has-background-light">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-2 is-offset-1">
+            <aside class="menu">
+              <h4 class="title is-size-4 has-text-white">
+                Sitemap
+              </h4>
+              <ul class="menu-list">
+                <li><a href="https://www.carbonfive.com/about/" class="navbar-item has-text-white">About</a></li>
+                <li><a href="https://www.carbonfive.com/services/" class="navbar-item has-text-white">Services</a></li>
+                <li><a href="https://www.carbonfive.com/clients/" class="navbar-item has-text-white">Clients</a></li>
+                <li><a href="https://www.carbonfive.com/resources/" class="navbar-item has-text-white">Resources</a></li>
+                <li><a href="/" class="navbar-item has-text-white">Blog</a></li>
+                <li><a href="https://www.carbonfive.com/careers/" class="navbar-item has-text-white">Careers</a></li>
+                <li><a href="https://www.carbonfive.com/contact/" class="navbar-item has-text-white">Contact</a></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="column is-2">
+            <aside class="menu">
+              <h4 class="title is-size-4 has-text-white">
+                Locations
+              </h4>
+              <ul class="menu-list">
+                <li><a href="https://www.carbonfive.com/locations/san-francisco/" class="navbar-item has-text-white">San Francisco</a></li>
+                <li><a href="https://www.carbonfive.com/locations/los-angeles/" class="navbar-item has-text-white">Los Angeles</a></li>
+                <li><a href="https://www.carbonfive.com/locations/chattanooga/" class="navbar-item has-text-white">Chattanooga</a></li>
+                <li><a href="https://www.carbonfive.com/locations/new-york/" class="navbar-item has-text-white">New York</a></li>
+                <li><a href="https://www.carbonfive.com/locations/seattle/" class="navbar-item has-text-white">Seattle</a></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="column is-2">
+          </div>
+          <div class="column is-4">
+            <h4 class="title is-size-4 has-text-white">
+              Say Hi!
+            </h4>
+            <form id="newsletter">
+              <div class="field has-addons has-margin-bottom-30">
+                <div class="control is-fullwidth">
+                  <input class="input has-text-white" type="email" name="email" required="true" placeholder="Email me rarely">
+                </div>
+                <div class="control">
+                  <button type="submit" class="button is-primary">
+                    <span class="icon">
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <p class="buttons">
+              <a href="https://twitter.com/carbonfive" target="_blank" rel="noopener noreferrer" class="button is-large is-dark">
+                <span class="icon">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </span>
+              </a>
+              <a href="https://www.facebook.com/carbon5" target="_blank" rel="noopener noreferrer" class="button is-large is-dark">
+                <span class="icon">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </span>
+              </a>
+              <a href="https://www.linkedin.com/company/carbon-five" target="_blank" rel="noopener noreferrer" class="button is-large is-dark">
+                <span class="icon">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </span>
+              </a>
+              <a href="https://github.com/carbonfive" target="_blank" rel="noopener noreferrer" class="button is-large is-dark">
+                <span class="icon">
+                  <i class="fab fa-github fa-lg"></i>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/carbonfive" target="_blank" rel="noopener noreferrer" class="button is-large is-dark">
+                <span class="icon">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </span>
+              </a>
+            </p>
+            <p class="is-size-7">
+              &copy; 2020 Carbon Five &nbsp;&nbsp;
+              <a href="/info/privacy-policy" class="has-text-white">
+                Privacy Policy
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+<!-- DO NOT COPY THIS SNIPPET! &mdash; HubSpot Identification Code -->
+<script type="text/javascript">
+(function(d,w) {
+w._hsq = w._hsq || [];
+w._hsq.push(["setContentType", "blog-post"]);
+})(document, window);
+</script>
+<!-- End of HubSpot Identification Code &mdash; DO NOT COPY THIS SNIPPET! -->
+
+<!-- Start of Async HubSpot Analytics Code for WordPress v1.2.1 -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2297926.js"></script>
+<!-- End of Async HubSpot Analytics Code -->
+	<div style="display:none">
+	<div class="grofile-hash-map-987def7741e1f36805e45f92d66ccf92">
+	</div>
+	</div>
+<script type='text/javascript' src='https://blog.carbonfive.com/wp-includes/js/wp-embed.min.js?ver=5.7.3' id='wp-embed-js'></script>
+<script src='https://stats.wp.com/e-202141.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.8.1',blog:'24012128',post:'5203',tz:'-7',srv:'blog.carbonfive.com'} ]);
+	_stq.push([ 'clickTrackerInit', '24012128', '5203' ]);
+</script>
+  </body>
+</html>

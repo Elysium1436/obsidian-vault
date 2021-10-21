@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "f2afd831b8d8269a",
+    "type": "split",
+    "children": [
+      {
+        "id": "652d8669f6d5d0bb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "First Principles Thinking.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "af2b6637635d6e4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "566dd746438c5e4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eceae1957c10c76d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "502917bc18010a10",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b6d59fd6e4241783",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccfbb37d32f42fb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f6bfe25937228ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "First Principles Thinking.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "652d8669f6d5d0bb",
+  "lastOpenFiles": [
+    "First Principles Thinking.md",
+    "Day Planners/Day Planner-20211021.md",
+    "_HOME.md",
+    "Personal Stuff/Anime List.md",
+    "Personal Stuff/Untitled.md",
+    "Untitled.md",
+    "Knowledge Bank/STEM/Computer Science/Python/asyncio/Loop.md",
+    "Knowledge Bank/STEM/Computer Science/Python/asyncio/Asynchronous programming.md",
+    "Images/Pasted image 20211017163310.png",
+    "Images/Pasted image 20211013095953.png"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "strictLineBreaks": false,
+  "foldHeading": false,
+  "foldIndent": true,
+  "showLineNumber": true,
+  "vimMode": true,
+  "autoConvertHtml": false,
+  "attachmentFolderPath": "./",
+  "promptDelete": false
+}
