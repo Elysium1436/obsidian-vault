@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "First Principles Thinking.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "First Principles Thinking.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
     "First Principles Thinking.md",
     "Day Planners/Day Planner-20211021.md",
     "_HOME.md",
@@ -96,7 +97,6 @@
     "Untitled.md",
     "Knowledge Bank/STEM/Computer Science/Python/asyncio/Loop.md",
     "Knowledge Bank/STEM/Computer Science/Python/asyncio/Asynchronous programming.md",
-    "Images/Pasted image 20211017163310.png",
-    "Images/Pasted image 20211013095953.png"
+    "Images/Pasted image 20211017163310.png"
   ]
 }
