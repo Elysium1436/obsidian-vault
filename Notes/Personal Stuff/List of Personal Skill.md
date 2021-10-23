@@ -20,3 +20,10 @@ The intention for this list is to keep track of my current abilities for future 
 	- SQLlite
 	- SQLAlchemy
 	
+### Data Science skills
+#### Classic Machine Learning
+
+#### Deep Learning
+
+#### Tools
+	
