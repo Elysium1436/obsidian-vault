@@ -1,0 +1,2 @@
+- Find a mentor that can help me get through this tarpit of a life
+- 
