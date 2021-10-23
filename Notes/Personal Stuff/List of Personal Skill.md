@@ -10,4 +10,13 @@ The intention for this list is to keep track of my current abilities for future 
 	
 	
 ### Back-end Skills
-	- 
+	- Python
+	- Flask
+	- Serialization
+	- Validation
+	- Testing
+	- SOLID design patters
+	- MongoDB
+	- SQLlite
+	- SQLAlchemy
+	
