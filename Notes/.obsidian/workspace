@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Telescope.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Telescope.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,12 +88,12 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
     "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Telescope.md",
     "Personal Stuff/List of Personal Skill.md",
     "Personal Stuff/Long-term To-Do's.md",
     "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/LSP Config Features and shortcuts.md",
     "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Lspsaga.md",
-    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
     "First Principles Thinking.md",
     "Day Planners/Day Planner-20211021.md",
     "_HOME.md",
