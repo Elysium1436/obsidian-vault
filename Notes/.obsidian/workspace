@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
+            "file": "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
+            "file": "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
+                "file": "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
     "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression.md",
@@ -109,7 +110,6 @@
     "Knowledge Bank/Linguistics/Some Convoluted Words/C.md",
     "Knowledge Bank/STEM/Linguistics/Some Convoluted Words/Untitled.md",
     "Knowledge Bank/STEM/Linguistics/Untitled.md",
-    "Untitled.md",
-    "Personal Stuff/Long-term To-Do's.md"
+    "Untitled.md"
   ]
 }
