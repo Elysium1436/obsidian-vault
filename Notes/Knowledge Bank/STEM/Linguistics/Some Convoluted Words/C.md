@@ -1,0 +1,2 @@
+- Congenitally
+	- Relating to something that exists since birth.
