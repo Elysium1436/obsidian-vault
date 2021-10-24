@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
+            "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
+                "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression.md",
     "Personal Stuff/Growth/Untitled.md",
@@ -96,7 +97,6 @@
     "Knowledge Bank/STEM/Linguistics/Some Convoluted Words/Untitled.md",
     "Knowledge Bank/STEM/Linguistics/Untitled.md",
     "Untitled.md",
-    "Personal Stuff/Long-term To-Do's.md",
-    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md"
+    "Personal Stuff/Long-term To-Do's.md"
   ]
 }
