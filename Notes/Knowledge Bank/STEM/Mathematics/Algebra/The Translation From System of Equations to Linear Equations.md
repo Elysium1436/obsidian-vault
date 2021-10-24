@@ -16,5 +16,7 @@ $$\begin{bmatrix}
 -1&1\\
 \end{bmatrix}=
 \begin{bmatrix}
-
-\end{bma$$
+-1\\
+-2\\
+1
+\end{bmatrix}$$
