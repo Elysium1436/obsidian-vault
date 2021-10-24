@@ -12,7 +12,20 @@
             "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "504be54c554557d6"
+      },
+      {
+        "id": "d2b341e9b598641b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
+            "mode": "preview"
+          }
+        },
+        "group": "504be54c554557d6"
       }
     ],
     "direction": "vertical"
