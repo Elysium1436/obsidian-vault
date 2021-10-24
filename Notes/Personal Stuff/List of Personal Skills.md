@@ -23,6 +23,7 @@ The intention for this list is to keep track of my current abilities for future 
 ### Data Science skills
 #### General Skills
 - Data Cleaning
+- Metrics
 #### Classic Machine Learning
 - Linear Regression
 	- Normal and Iterative
