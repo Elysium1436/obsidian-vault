@@ -21,9 +21,13 @@ The intention for this list is to keep track of my current abilities for future 
 	- SQLAlchemy
 	
 ### Data Science skills
+#### General Skills
+- Data Cleaning
 #### Classic Machine Learning
-
+- Linear Regression
+	- Normal and Iterative
+	- L1, L2 and Elastic Normalization
+	- Conditions/Assumptions for Linear Regression
 #### Deep Learning
 
-#### Tools
-	
+#### Business Intelligence	
