@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
+            "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
+            "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
+                "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,12 +101,12 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
-    "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
-    "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
-    "Knowledge Bank/STEM/Mathematics/Algebra/The Translation From System of Equations to Linear Equations.md",
-    "Personal Stuff/Growth/Thoughts/The Types of Arrogance.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression.md",
+    "Knowledge Bank/STEM/Mathematics/Algebra/The Translation From System of Equations to Linear Equations.md",
+    "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
+    "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
+    "Personal Stuff/Growth/Thoughts/The Types of Arrogance.md",
     "Personal Stuff/Growth/Untitled.md",
     "Personal Stuff/List of Personal Skills.md",
     "Knowledge Bank/Linguistics/Some Convoluted Words/C.md",
