@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Python/Typing/Typing Basics.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Python/Typing/Typing Basics.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Python/Typing/Typing Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Python/Typing/Typing Basics.md",
     "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
     "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Lspsaga.md",
     "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Telescope.md",
@@ -109,7 +110,6 @@
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression.md",
     "Knowledge Bank/STEM/Mathematics/Algebra/The Translation From System of Equations to Linear Equations.md",
-    "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
-    "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md"
+    "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md"
   ]
 }
