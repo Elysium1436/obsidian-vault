@@ -21,4 +21,29 @@ Here is a list of the non-obvious Stuff
  reveal_type(1) # Will print an error message with the type. 
  ```
  
- 
+ Standard duck types are for objects that behave in certain ways.
+ ```python
+ from typing import Mapping, MutableMapping, Sequence, Iterable, List, Set
+
+# Use Iterable for generic iterables (anything usable in "for"),
+# and Sequence where a sequence (supporting "len" and "__getitem__") is
+# required
+def f(ints: Iterable[int]) -> List[str]:
+    return [str(x) for x in ints]
+
+f(range(1, 3))
+
+# Mapping describes a dict-like object (with "__getitem__") that we won't
+# mutate, and MutableMapping one (with "__setitem__") that we might
+def f(my_mapping: Mapping[int, str]) -> List[int]:
+    my_mapping[5] = 'maybe'  # if we try this, mypy will throw an error...
+    return list(my_mapping.keys())
+
+f({3: 'yes', 4: 'no'})
+
+def f(my_mapping: MutableMapping[int, str]) -> Set[str]:
+    my_mapping[5] = 'maybe'  # ...but mypy is OK with this.
+    return set(my_mapping.values())
+
+f({3: 'yes', 4: 'no'})
+```
