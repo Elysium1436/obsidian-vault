@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
             "mode": "preview"
           }
         },
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "lsp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md",
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Lspsaga.md",
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Plugins/Telescope.md",
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Text Objects.md",
+    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Useful Stuff.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression - Assumptions.md",
     "Knowledge Bank/STEM/Data Science/Machine Learning/Classical Machine Learning/Linear Regression.md",
     "Knowledge Bank/STEM/Mathematics/Algebra/The Translation From System of Equations to Linear Equations.md",
     "Knowledge Bank/STEM/Mathematics/Algebra/Overdetermined System.md",
-    "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md",
-    "Personal Stuff/Growth/Thoughts/The Types of Arrogance.md",
-    "Personal Stuff/Growth/Untitled.md",
-    "Personal Stuff/List of Personal Skills.md",
-    "Knowledge Bank/Linguistics/Some Convoluted Words/C.md",
-    "Knowledge Bank/STEM/Linguistics/Some Convoluted Words/Untitled.md"
+    "Knowledge Bank/STEM/Mathematics/Statistics/Multicolinearity.md"
   ]
 }
