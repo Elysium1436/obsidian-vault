@@ -8,4 +8,9 @@ Business Processes can be organized into three types:
 - Supporting processes, which supports the operational processes, e.g. accounting, recruitment, call centar, technical support, etc.
 
 Another way of differentiating different Processes are:
-1. Op
+
+1. Operational processes, which focus on properly executing the operational tasks of an entity; this is where personnel "get the things done"
+2. Management processes, which ensure that the operational processes are conducted appropriately; this is where managers "ensure efficient and effective work processes"
+3. Governance processes, which ensure the entity is operating in full compliance with necessary legal regulations, guidelines, and shareholder expectations; this is where executives ensure the "rules and guidelines for business success" are followed
+
+In any case, this highlights the importance of dividing labors into atomical components and distributing each of them to a select few. 

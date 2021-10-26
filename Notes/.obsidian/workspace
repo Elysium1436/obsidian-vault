@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Process.md",
+            "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Process.md",
+                "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,7 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Process.md",
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Normal Modeling.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Mart.md",
