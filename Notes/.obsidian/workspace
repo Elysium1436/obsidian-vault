@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
+            "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
+                "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md",
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Mart.md",
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Storage.md",
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Warehouse.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Intelligence.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Grafana/Knowledge Managment.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Storage.md",
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Knowledge Managment.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Gathering.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Grafana/Grafana.md",
-    "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md",
-    "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
-    "Knowledge Bank/STEM/Computer Science/Python/Typing/Typing Basics.md",
-    "Knowledge Bank/STEM/Computer Science/Miscellaneous/Vim Stuff/Things to Learn.md"
+    "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md"
   ]
 }
