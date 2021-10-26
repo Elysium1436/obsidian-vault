@@ -13,4 +13,13 @@ Another way of differentiating different Processes are:
 2. Management processes, which ensure that the operational processes are conducted appropriately; this is where managers "ensure efficient and effective work processes"
 3. Governance processes, which ensure the entity is operating in full compliance with necessary legal regulations, guidelines, and shareholder expectations; this is where executives ensure the "rules and guidelines for business success" are followed
 
+#### What are the abstract components of a business process?
+> - Clear input and output(s)
+> - Activities ordered in time and space
+> - Customer (Someone to receive)
+> - It must add value to the receipient. 
+> - It cannot exist 
+
+
+
 In any case, this highlights the importance of dividing labors into atomical components and distributing each of them to a select few. 
