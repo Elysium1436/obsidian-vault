@@ -18,7 +18,12 @@ Another way of differentiating different Processes are:
 > - Activities ordered in time and space
 > - Customer (Someone to receive)
 > - It must add value to the receipient. 
-> - It cannot exist 
+> - It cannot exist in itself, it must be *embedded*  in a organizational structure
+> - It can have several functions
+> - Identifying a figure responsible for the maintainence and improvement of a process is a prerequisite.
+
+
+
 
 
 
