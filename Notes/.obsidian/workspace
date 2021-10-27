@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
+            "file": "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b6d59fd6e4241783",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
+                "file": "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +89,8 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
+    "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Normal Modeling.md",
@@ -95,8 +98,6 @@
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Mart.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Storage.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Warehouse.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Intelligence.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Knowledge Managment.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Gathering.md"
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Intelligence.md"
   ]
 }
