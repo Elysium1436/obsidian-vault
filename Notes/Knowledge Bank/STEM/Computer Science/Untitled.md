@@ -56,4 +56,9 @@ I just copied the link from discord
 
 ![Funni meme](https://media.discordapp.net/attachments/722432855057104908/902757468453613588/248357784_10158005046377471_1152687587498347223_n.png)
 
-Here in obsidian, you can 
+Here in obsidian, you can copy an *image* to your clipboard and paste it. A file will appear on the obsidian directory. You can change in the settings where you want your file to be, either in a specific folder, or the folder where your file is currently at, or a subfolder.
+
+![[Pasted image 20211028000625.png]]
+
+You can also put links in sort of [like this](https://www.google.com)
+

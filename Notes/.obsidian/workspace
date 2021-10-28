@@ -12,10 +12,11 @@
             "file": "Knowledge Bank/STEM/Computer Science/Untitled.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "25ebbcccf2b4a838"
       },
       {
-        "id": "dfa6cf132e80111b",
+        "id": "25cf21b956767471",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -23,7 +24,8 @@
             "file": "Knowledge Bank/STEM/Computer Science/Untitled.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "25ebbcccf2b4a838"
       }
     ],
     "direction": "vertical"
@@ -100,14 +102,14 @@
   "active": "a9b36b9a5520257f",
   "lastOpenFiles": [
     "Knowledge Bank/STEM/Computer Science/Untitled.md",
+    "www.google.com.md",
+    "Knowledge Bank/Linguistics/Some Convoluted Words/C.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Prototype.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Normal Modeling.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Mart.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Storage.md"
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md"
   ]
 }
