@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "a9b36b9a5520257f",
+        "id": "465c878001c92bd0",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -13,10 +13,10 @@
             "mode": "source"
           }
         },
-        "group": "25ebbcccf2b4a838"
+        "group": "159ce497722336da"
       },
       {
-        "id": "25cf21b956767471",
+        "id": "81e091815e25449b",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -25,7 +25,7 @@
             "mode": "preview"
           }
         },
-        "group": "25ebbcccf2b4a838"
+        "group": "159ce497722336da"
       }
     ],
     "direction": "vertical"
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lsp",
+                "query": "tag:todo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a9b36b9a5520257f",
+  "active": "465c878001c92bd0",
   "lastOpenFiles": [
     "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
     "Knowledge Bank/STEM/Computer Science/Pasted image 20211028000625.png",

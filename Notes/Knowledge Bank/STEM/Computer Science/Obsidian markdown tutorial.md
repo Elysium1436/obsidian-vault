@@ -1,3 +1,6 @@
+Tags: #todo
+
+
 # Headers
 ---
 
@@ -64,5 +67,8 @@ You can also put links in sort of like this  [a link](https://www.google.com)
 
 # Obsidian related stuff
 
-Press \[ two times, then write something, you'll see a menu pop up. [[Angela Broccoli]] Thats how you link a document inside obsidian
+Press \[ two times, then write something, you'll see a menu pop up. [[Angela Broccoli|No she's not a boccoli im joking]] Thats how you link a document inside obsidian
 
+# alskdjfalgjlg
+	akjflkajsgljagssalkgjlfh
+	slfdashlkdgjghkfdhgsg
