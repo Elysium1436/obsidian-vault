@@ -19,3 +19,41 @@
 If you press \<ENTER> two times, you can exit this list thingy
 
 # Paragraphs
+To create a paragraph, just put a line in between them
+
+Like this
+If you just press enter, it wont do one.
+
+# Bold
+To **bolden** a text, just put *two* asterisks.
+
+***Bolden and italic***
+
+>Block quotes are pogger
+>Look how cute they look
+
+>You can
+>>Also nest these bad boys
+
+> ### You can use *other* stuff **here too**
+> - Like lists
+> 1. Numbered lists
+
+# Code
+```
+These are code blocks
+You can now call yourself a programmer with these backticks
+Three backticks will do the job
+```
+
+```python
+from sassy.boy.xd import lmao
+print("You can also put some highlight syntax if you just put a language after the first three backticks")
+```
+
+# Images
+I just copied the link from discord
+
+![Funni meme](https://media.discordapp.net/attachments/722432855057104908/902757468453613588/248357784_10158005046377471_1152687587498347223_n.png)
+
+Here in obsidian, you can 
