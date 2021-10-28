@@ -60,5 +60,9 @@ Here in obsidian, you can copy an *image* to your clipboard and paste it. A file
 
 ![[Pasted image 20211028000625.png]]
 
-You can also put links in sort of [like this](https://www.google.com)
+You can also put links in sort of like this  [a link](https://www.google.com)
+
+# Obsidian related stuff
+
+Press \[ two times, then write something, you'll see a menu pop up. [[Angela Broccoli]] Thats how you link a document inside obsidian
 

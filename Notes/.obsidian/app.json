@@ -6,5 +6,6 @@
   "vimMode": true,
   "autoConvertHtml": false,
   "attachmentFolderPath": "./",
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }

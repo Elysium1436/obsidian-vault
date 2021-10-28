@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Untitled.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Untitled.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/Untitled.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "a9b36b9a5520257f",
   "lastOpenFiles": [
-    "Knowledge Bank/STEM/Computer Science/Untitled.md",
-    "www.google.com.md",
+    "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
+    "Knowledge Bank/STEM/Computer Science/Pasted image 20211028000625.png",
+    "Angela Broccoli.md",
     "Knowledge Bank/Linguistics/Some Convoluted Words/C.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Prototype.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Normal Modeling.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md"
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Normal Modeling.md"
   ]
 }
