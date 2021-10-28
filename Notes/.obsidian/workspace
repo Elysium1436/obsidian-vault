@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Prototype.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b6d59fd6e4241783",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +88,7 @@
   },
   "active": "652d8669f6d5d0bb",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Prototype.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
@@ -97,7 +97,6 @@
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Dimensional Modeling.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Mart.md",
     "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Storage.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Warehouse.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Business Intelligence.md"
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Data Warehouse.md"
   ]
 }
