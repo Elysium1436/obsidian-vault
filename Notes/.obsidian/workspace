@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/php/Array.md",
+            "file": "Knowledge Bank/STEM/Computer Science/php/Standard Functions.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/php/Array.md",
+                "file": "Knowledge Bank/STEM/Computer Science/php/Standard Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/php/Standard Functions.md",
     "Knowledge Bank/STEM/Computer Science/php/Array.md",
     "Knowledge Bank/STEM/Computer Science/php/Strings.md",
     "Knowledge Bank/STEM/Computer Science/php/Class.md",
@@ -96,7 +97,6 @@
     "Knowledge Bank/STEM/Computer Science/php/Forms.md",
     "Knowledge Bank/STEM/Computer Science/php/Logic.md",
     "Knowledge Bank/STEM/Computer Science/php/Predefined Variables.md",
-    "Knowledge Bank/STEM/Computer Science/php/Variables.md",
-    "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md"
+    "Knowledge Bank/STEM/Computer Science/php/Variables.md"
   ]
 }

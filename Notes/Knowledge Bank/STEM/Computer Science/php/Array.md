@@ -54,3 +54,13 @@ $array = array(
 
 var_dump($array);
 ```
+- Assigning a value to the `[]` index will append listwise, incrementing the largest integer index
+```php
+$arr = array(5=>1, 12=>2);
+$arr[] = "something" //Equivalent to $arr[13]="something"
+```
+- To delete an element, use the `unset`.
+```php
+unset($arr[5]) //deletes element with key 5
+unset($arr) //deletes the whole thing
+```
