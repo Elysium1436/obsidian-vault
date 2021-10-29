@@ -30,8 +30,8 @@ if (strpos($SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE){
 }
 ?>
 ```
-- Html forms are easy in php
-Instead of writing
+- To Access Data form html forms
+The html form:
 ```html
 <form action="foo.php" method="post">
     Name:  <input type="text" name="username" /><br />
@@ -40,7 +40,7 @@ Instead of writing
 </form>
 
 ```
-We can write
+Accessing data
 ```php
 <?php
 echo $_POST['username'];
