@@ -22,3 +22,4 @@ Now, I am printing some {$foo->bar[1]}.
 This should print a capital 'A': \x41
 EOT;
 ```
+

@@ -29,3 +29,4 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {
     echo 'You are using Internet Explorer.<br />';
 }
 ```
+https://www.php.net/manual/en/language.types.string.php#language.types.string.parsing
