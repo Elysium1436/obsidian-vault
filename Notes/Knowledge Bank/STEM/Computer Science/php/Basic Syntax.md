@@ -16,9 +16,5 @@ if (strpos($SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE){
 }
 ?>
 ```
-- To Access Data form html forms
-
-- Type Comparisions
-	- https://www.php.net/manual/en/types.comparisons.php
 
 
