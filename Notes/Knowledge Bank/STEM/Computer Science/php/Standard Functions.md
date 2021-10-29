@@ -11,7 +11,7 @@
 - `count(Countable|array $value, int $mode = COUNT_NORMAL):int` 
 	- Will count the number of elements. Changing mode to `COUNT_RECURSIVE` will count the number of sub elements recursively
 - `array_diff()` compares differences between arrays
-
+- `sort(array $array, int flags = SORT_REGULAR)` sorts an array. 
 
 
 
