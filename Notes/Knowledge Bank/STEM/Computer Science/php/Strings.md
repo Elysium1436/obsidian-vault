@@ -8,7 +8,16 @@ echo <<<END
 	  c
 \n
 END;
+echo <<<END
+		a
+	   b
+	  c
+	  END;
+	  
+//itll print relative to the END word
 ```
+- Closing identifier cannot be further than any lines in the body
+- You also cannot mix spaces and tabs.
 
 
 
