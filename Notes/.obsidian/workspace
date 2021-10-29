@@ -4,25 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "465c878001c92bd0",
-        "type": "leaf",
-        "state": {
-          "type": "graph",
-          "state": {}
-        },
-        "group": "159ce497722336da"
-      },
-      {
-        "id": "81e091815e25449b",
+        "id": "6d5ec5f67bbda379",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
-            "mode": "preview"
+            "file": "Knowledge Bank/STEM/Computer Science/php/Basic Syntax.md",
+            "mode": "source"
           }
-        },
-        "group": "159ce497722336da"
+        }
       }
     ],
     "direction": "vertical"
@@ -78,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Knowledge Bank/STEM/Computer Science/php/Basic Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,8 +86,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "465c878001c92bd0",
+  "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/php/Basic Syntax.md",
+    "Knowledge Bank/STEM/Computer Science/php/Predefined Variables.md",
     "Knowledge Bank/STEM/Computer Science/Obsidian markdown tutorial.md",
     "Knowledge Bank/STEM/Computer Science/Pasted image 20211028000625.png",
     "Angela Broccoli.md",
@@ -104,8 +97,6 @@
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Prototype.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Javascript Ecosystem.md",
     "Knowledge Bank/STEM/Computer Science/Front End/Javascript/Creating an npm project.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/General Concepts/Business Process.md",
-    "Knowledge Bank/STEM/Data Science/Business Intelligence/Normal Modeling.md"
+    "Knowledge Bank/STEM/Data Science/Business Intelligence/Aggregate (data warehouse).md"
   ]
 }
