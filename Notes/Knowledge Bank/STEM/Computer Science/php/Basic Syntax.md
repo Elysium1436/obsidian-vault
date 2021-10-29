@@ -13,3 +13,37 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {
     echo 'You are using Internet Explorer.<br />';
 }
 ```
+
+### PHP Quirks
+- You can mix html and php logic with
+```php 
+<?php
+if (strpos($SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE){
+?>
+<h3>strpos() returned a non false value</h3>
+<p>Means you are using internet expolorer</p>
+<?php
+} else {
+?>
+<h3> not using IE </h3>
+<?php
+}
+?>
+```
+- Html forms are easy in php
+Instead of writing
+```html
+<form action="foo.php" method="post">
+    Name:  <input type="text" name="username" /><br />
+    Email: <input type="text" name="email" /><br />
+    <input type="submit" name="submit" value="Submit me!" />
+</form>
+
+```
+We can write
+```php
+<?php
+echo $_POST['username'];
+echo $_REQUEST['username'];
+?>
+```
