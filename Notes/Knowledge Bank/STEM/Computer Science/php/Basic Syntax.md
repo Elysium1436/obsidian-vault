@@ -55,3 +55,6 @@ echo $_REQUEST['username'];
 	Otherwise this will show.
 <php endif; ?>
 ```
+- Type Comparisions
+	- https://www.php.net/manual/en/types.comparisons.php
+
