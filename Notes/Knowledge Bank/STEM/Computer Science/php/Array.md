@@ -32,6 +32,15 @@ $array = array(
 ```
 
 
+#### Iteration 
+- Use the `foreach` syntax.
+```php
+foreach($array as $i => $value){
+	//Do something... You can use the value of $i and $value
+	//In each iteration.
+}
+
+```
 
 
 
