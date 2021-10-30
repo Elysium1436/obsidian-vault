@@ -1,0 +1,3 @@
+- `__FUNCTION__` Returns the function's name that the constant is a scope of.
+- `__METHOD__` Similar to above but for methods. Both of which respects namespace.
+- `__NAMESPACE__` Returns the name of the namespace.
