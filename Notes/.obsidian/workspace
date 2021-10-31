@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
+            "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Routes.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b6d59fd6e4241783",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
+                "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Routes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +89,8 @@
   },
   "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
-    "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
     "Knowledge Bank/STEM/Computer Science/php/Laravel/Routes.md",
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
     "Knowledge Bank/STEM/Computer Science/php/Class.md",
     "Knowledge Bank/STEM/Computer Science/php/Basic Syntax.md",
     "Knowledge Bank/STEM/Computer Science/php/Special Constants.md",
