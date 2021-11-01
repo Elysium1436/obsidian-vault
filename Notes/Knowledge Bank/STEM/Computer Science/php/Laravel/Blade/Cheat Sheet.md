@@ -9,3 +9,7 @@ To "copy paste" stuff from the includes into the layout, use `@include('module.p
 To set a place as a content area, use `@yield('content_name')`
 
 To insert content inside that yield form another file, insert a `@extends('module.path')`, then create a section with `@section('content_name')` with the exact same name as the yield, then close it with `@stop`
+
+
+You can conditionally render html with the 
+`@if(expr)`
