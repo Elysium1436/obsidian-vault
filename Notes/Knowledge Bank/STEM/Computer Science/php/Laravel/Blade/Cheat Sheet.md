@@ -30,3 +30,12 @@ also
 `@foreach($variable as $item)`
 `@endforeach`
 
+```php
+forelse($variable as $item)
+	<h2>There are names!</h2>
+@empty
+//in case the thing is empty
+//stuff...
+@endforelse
+
+```
