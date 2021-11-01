@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/php/Inbuilt Symbols/Request().md",
+            "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/php/Inbuilt Symbols/Request().md",
+                "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
     "Knowledge Bank/STEM/Computer Science/php/Inbuilt Symbols/Request().md",
     "Knowledge Bank/STEM/Computer Science/php/Inbuilt Symbols/URL.md",
-    "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
     "Knowledge Bank/STEM/Computer Science/php/Laravel/Routes.md",
     "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
     "Knowledge Bank/STEM/Computer Science/php/Class.md",
