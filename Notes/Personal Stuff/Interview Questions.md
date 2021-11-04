@@ -22,8 +22,8 @@
 
 
 
-Forças: Versátil, Autonomia, Conhecimento abrangente, Trabalho em Equipe, sou cuidadoso  e ponho o máximo de esforço para criar um 
+Forças: Versátil, Autonomia, Conhecimento abrangente, Trabalho em Equipe, sou cuidadoso  e ponho o máximo de esforço para realizar a tarefa de forma completa e sem 
 Motivações: Gosto de ambientes que requer um grau alto de aprendizagem constante.
-Porque deveria te contratar?: 
+Porque deveria te contratar?: Eu sempre tentei o meu melhor para ajudar meus colegas da melhor forma possivel , eu quero ser
 Fraquezas: Algumas vezes fico um pouco nervoso quando sou colocado sob pressão em contexto social, porém isso é algo que gradativamente tenho melhorado bastante.
 História: Nasci nos estados unidos, vim pro brasil, escolhi faculdade de física, decedi fazer ciencias de dados, notei que software design seria útil ter.
