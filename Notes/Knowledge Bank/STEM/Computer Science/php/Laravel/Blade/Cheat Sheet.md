@@ -14,7 +14,7 @@ To insert content inside that yield form another file, insert a `@extends('modul
 You can conditionally render html with the 
 `@if(expr)`
 `@endif`
-also
+
 `@empty($variable)`
 `@endempty`
 

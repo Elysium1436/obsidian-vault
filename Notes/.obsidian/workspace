@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
+            "file": "Knowledge Bank/STEM/Computer Science/Front End/TailwindCSS/MOC.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b6d59fd6e4241783",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
+                "file": "Knowledge Bank/STEM/Computer Science/Front End/TailwindCSS/MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +88,15 @@
   },
   "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/Front End/TailwindCSS/MOC.md",
+    "Knowledge Bank/STEM/Computer Science/Front End/TailwindCSS/TailWindCSS-Padding.md",
+    "Knowledge Bank/STEM/Computer Science/Front End/CSS/css-property/css-property -- perspective-origin.md",
+    "Knowledge Bank/STEM/Computer Science/Front End/CSS/css-property/css-property -- perspective.md",
+    "Knowledge Bank/STEM/Computer Science/Front End/CSS/css-property/css-property -- animation.md",
     "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
     "Knowledge Bank/STEM/Computer Science/php/Inbuilt Symbols/Request().md",
     "Knowledge Bank/STEM/Computer Science/php/Inbuilt Symbols/URL.md",
     "Knowledge Bank/STEM/Computer Science/php/Laravel/Routes.md",
-    "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
-    "Knowledge Bank/STEM/Computer Science/php/Class.md",
-    "Knowledge Bank/STEM/Computer Science/php/Basic Syntax.md",
-    "Knowledge Bank/STEM/Computer Science/php/Special Constants.md",
-    "Knowledge Bank/STEM/Computer Science/php/Namespaces.md",
-    "Knowledge Bank/STEM/Computer Science/php/Laravel/Laravel - How It Works.md"
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md"
   ]
 }
