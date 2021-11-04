@@ -18,3 +18,12 @@
 	1. Uma coisa que reparei durante meus estudos sozinhos, é que durante meus projetos pessoais, posso acabar trocando o prático pelo ideal. Aprendendo coisa demais em muito detalhe. Pra resolver esse detalhe, eu ando fazendo um checklist nos meus trabalhos pra deixar mais óbvio o meu foco.
 7. Tempos em que mostrei habilidades de lideres
 	1. Hmm. Não tenho uma experiência específica em que mostrei essa habilidade. O que eu consigo pensar são as horas que tirei o meu tempo livre pra ajudar outras pessoas do meu grupo em algum trabalho. 
+
+
+
+
+Forças: Versátil, Autonomia, Conhecimento abrangente, Trabalho em Equipe, sou cuidadoso  e ponho o máximo de esforço para criar um 
+Motivações: Gosto de ambientes que requer um grau alto de aprendizagem constante.
+Porque deveria te contratar?: 
+Fraquezas: Algumas vezes fico um pouco nervoso quando sou colocado sob pressão em contexto social, porém isso é algo que gradativamente tenho melhorado bastante.
+História: Nasci nos estados unidos, vim pro brasil, escolhi faculdade de física, decedi fazer ciencias de dados, notei que software design seria útil ter.
