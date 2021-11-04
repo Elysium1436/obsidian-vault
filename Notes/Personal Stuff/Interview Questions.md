@@ -3,4 +3,8 @@
 	- Nasci nos estados, vim pro brasil com 8 anos
 	- Escolhi Física computacional pois era uma área que eu estava interessado e me daria habilidades que seriam úteis. Reparei que eu amei programação
 	- Terminei a faculdade com um artigo em revista mundial
-	- Resolvi aprender ciencias de dados e machine learning pela versatilidade nas áreas que posso trbaa
+	- Durante a faculdade, reparei que seria viável eu aprender por conta própria
+	- Resolvi aprender ciencias de dados e machine learning pela versatilidade nas áreas que posso trabalhar.
+	- Durante os estudos, reparei que sem saber a criar software, machine learning não teria muita útilidade, então foi natural eu aprender Front e backend.
+	- Aqui estou
+2. Eu ouvi muito bem do ambiente pela minha amiga que está trabalhando e me indicou. As pessoas são legais
