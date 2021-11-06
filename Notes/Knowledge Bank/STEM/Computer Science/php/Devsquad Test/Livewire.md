@@ -25,4 +25,26 @@ use Illuminate\Support\Facades\Schema;
 
 class Create_Table_name extends Migration
 
-public 
+	public function up()
+	{
+		Schema::create('table_name', function (Blueprints $table){
+
+			//All tables need an id.
+			$table->id();
+			$table->string('name');
+			$table->string('airline');
+			//Makes the (updated/created) columns nullable
+			$table->timestamps();
+
+		})
+
+	}
+
+	public function down(){
+
+		//Use this to drop the table
+		Schema::drop('table_name');
+
+	}
+
+```
