@@ -58,7 +58,8 @@ class Create_Table_name extends Migration
 - To rollback all migration, use `migrate:reset`
 - To specify a connection, do something like `Schema::conection('something')->create...`
 - To make a temporary table, use the `$table->temporary();` method.
-- You can update a table using the `Schema::table('table_name',...)` method. You can add columkns or indexes (?) to the table.
+- You can update a table using the `Schema::table('table_name',...)` method. You can add columkns or indexes (?) to the table, or modify other column attributes, like `$table->$string('name',50)->change();` or `...->nullable()->change();`.
 - Rename using the `Schema::rename($from, $to);`
+- >The following column types can be modified: bigInteger, binary, boolean, date, dateTime, dateTimeTz, decimal, integer, json, longText, mediumText, smallInteger, string, text, time, unsignedBigInteger, unsignedInteger, unsignedSmallInteger, and uuid. To modify a timestamp column type a Doctrine type must be registered.
 - Drop an existing table using `Schema::drop('users');` or `Schema::dropIfExists('users');`
-- 
+-  
