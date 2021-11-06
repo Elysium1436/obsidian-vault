@@ -53,5 +53,14 @@ class Create_Table_name extends Migration
 
 ```
 #### Running migration
-- To run all the migration, execute the `php artisan migrate` command:
+- To run all the migration, execute the `php artisan migrate` command
+- If you want ot rollback to the previous migration, use `php artisan rollback --step=n`
+- To rollback all migration, use `migrate:reset`
+- To specify a connection, do something like
+- ```php
+- ```
+
+
+- 
+
 
