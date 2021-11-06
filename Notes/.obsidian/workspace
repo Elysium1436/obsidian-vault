@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Livewire.md",
+            "file": "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Job.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b6d59fd6e4241783",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Livewire.md",
+                "file": "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Job.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,9 +88,9 @@
   },
   "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Job.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Livewire.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Http.md",
-    "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Job.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Package Install.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Migration.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Test.md",
