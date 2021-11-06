@@ -56,11 +56,8 @@ class Create_Table_name extends Migration
 - To run all the migration, execute the `php artisan migrate` command
 - If you want ot rollback to the previous migration, use `php artisan rollback --step=n`
 - To rollback all migration, use `migrate:reset`
-- To specify a connection, do something like
-- ```php
-- ```
-
-
-- 
-
-
+- To specify a connection, do something like `Schema::conection('something')->create...`
+- To make a temporary table, use the `$table->temporary();` method.
+- You can update a table using the `Schema::table('table_name',...)` method. You can add columkns or indexes (?) to the table.
+- Rename using the `Schema::rename($from, $to);`
+- Drop an existing table using `Schema::drop('users');`
