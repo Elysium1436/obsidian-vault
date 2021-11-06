@@ -25,6 +25,10 @@ use Illuminate\Support\Facades\Schema;
 
 class Create_Table_name extends Migration
 
+	//Use this to use migration on a specific connecition.
+	protected $connection = 'pgsql'
+
+
 	public function up()
 	{
 		Schema::create('table_name', function (Blueprints $table){
@@ -48,3 +52,6 @@ class Create_Table_name extends Migration
 	}
 
 ```
+#### Running migration
+- To run all the migration, execute the `php artisan migrate` command:
+
