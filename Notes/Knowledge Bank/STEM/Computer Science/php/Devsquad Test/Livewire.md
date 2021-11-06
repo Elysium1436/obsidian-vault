@@ -59,7 +59,18 @@ class Create_Table_name extends Migration
 - To specify a connection, do something like `Schema::conection('something')->create...`
 - To make a temporary table, use the `$table->temporary();` method.
 - You can update a table using the `Schema::table('table_name',...)` method. You can add columkns or indexes (?) to the table, or modify other column attributes, like `$table->$string('name',50)->change();` or `...->nullable()->change();`.
-- Rename using the `Schema::rename($from, $to);`
+- Rename table using the `Schema::rename($from, $to);`
 - >The following column types can be modified: bigInteger, binary, boolean, date, dateTime, dateTimeTz, decimal, integer, json, longText, mediumText, smallInteger, string, text, time, unsignedBigInteger, unsignedInteger, unsignedSmallInteger, and uuid. To modify a timestamp column type a Doctrine type must be registered.
 - Drop an existing table using `Schema::drop('users');` or `Schema::dropIfExists('users');`
--  
+-  To rename a column, use
+```php
+Schema::table('users', function (Blueprint $table) {
+    $table->renameColumn('from', 'to');
+});
+```
+- To drop a column, you may use the dropColumn method on the schema builder blueprint. If your application is utilizing an SQLite database, you must install the doctrine/dbal package via the Composer package manager before the dropColumn method may be used:
+```php
+Schema::table('users', function (Blueprint $table) {
+    $table->dropColumn('votes'); // or dropColumns(['col1','col2','col3'])
+});
+```
