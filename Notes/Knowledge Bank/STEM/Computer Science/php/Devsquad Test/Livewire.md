@@ -60,4 +60,5 @@ class Create_Table_name extends Migration
 - To make a temporary table, use the `$table->temporary();` method.
 - You can update a table using the `Schema::table('table_name',...)` method. You can add columkns or indexes (?) to the table.
 - Rename using the `Schema::rename($from, $to);`
-- Drop an existing table using `Schema::drop('users');`
+- Drop an existing table using `Schema::drop('users');` or `Schema::dropIfExists('users');`
+- 
