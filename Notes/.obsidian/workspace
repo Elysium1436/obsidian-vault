@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Overview.md",
+            "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Overview.md",
+                "file": "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "6d5ec5f67bbda379",
   "lastOpenFiles": [
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Blade/Cheat Sheet.md",
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Laravel - How It Works.md",
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Views.md",
+    "Knowledge Bank/STEM/Computer Science/php/Laravel/Routes.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Overview.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Job.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Livewire.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Http.md",
     "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Package Install.md",
-    "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Migration.md",
-    "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Test.md",
-    "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/CRUD.md",
-    "Personal Stuff/Interview Questions.md",
-    "Knowledge Bank/STEM/Computer Science/Front End/TailwindCSS/MOC.md"
+    "Knowledge Bank/STEM/Computer Science/php/Devsquad Test/Migration.md"
   ]
 }
